@@ -1,0 +1,25 @@
+/* Ensure the container takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This makes sure the content pushes the footer down */
+.content {
+  flex: 1;
+}
+
+/* Make sure footer stays at the bottom */
+.footer {
+  background-color: var(--primary-green);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
